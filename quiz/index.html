@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
 
+    <script src="QuizBook.js"></script>
+    <script src="simple-timer-lib.js"></script>
+</head>
+<body>
+    <header>
+        <span>ジェンダー平等 クイズ</span>
+    </header>
+
+    <main>
+        <div id="que-area-outer">
+            <div id="que-area">
+                <p id="que-area-inner">
+                    <span class="q-and-a">Q.</span>
+                    <span id="que"></span>
+                </p>
+                <p><span id="TorF"></span></p>
+                <p id="kaisetsu">▶ 解説✨</p>
+                <p id="ans-area">
+                    <span class="q-and-a" id="q">A.</span>
+                    <span id="ans"></span>
+                </p>
+                <p>
+                    <span id="com"></span>
+                </p>
+            </div>
+        </div>
+        <div id="button-area">
+            <button type="button" class="active-button"></button>
+            <button type="button" class="active-button"></button>
+            <button type="button" class="active-button"></button>
+            <button type="button" class="active-button"></button>
+        </div>
+    </main>
+
+    <div id="timer"></div>
+
+    <div id="result">
+        <p id="kekka"><span>⸻⸻⸻⸻ 結果 ⸻⸻⸻⸻</span></p>
+        <p id="point-outer"><span>あなたの得点は...</span><span id="all-point"></span><span>🎉</span></p>
+        <img src="E_SDG_logo_without_UN_emblem_horizontal_CMYK_Transparent.png">
+    </div>
+
+    <div id="start">
+        <p><span>四択クイズです。時間内に下のボタンをタッチして答えて下さい</span></p>
+        <button id="start-button" onclick="start()">クイズスタート</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
