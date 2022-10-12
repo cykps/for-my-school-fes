@@ -15,7 +15,7 @@ function startStop() {
     console.log("start");
     if (!Timer.isDrowing()) {
         console.log("recest");
-        Timer.start(20000);
+        Timer.start(30000);
     } else {
         Timer.stop();
     }
