@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Mile Shake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="simple-timer-lib.js"></script>
+</head>
+<body>
 
+    <div id="timer"></div>
+    <button onclick="startStop()">Start<br>Stop</button>
+    <audio id="audio">
+        <source src="./audio.mp3" type="audio/mp3">
+    </audio>
+
+    <main>
+        <h1><span>汎用 タイマー</span></h1>
+            <input type="text" id="input" required maxlength="256"  placeholder="秒数を入力">
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
