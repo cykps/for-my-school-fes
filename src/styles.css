@@ -18,5 +18,6 @@ main {
 }
 
 main div {
-    width: 33vw;
+    width: 25vw;
+    padding: 4vw;
 }
