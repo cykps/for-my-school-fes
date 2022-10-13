@@ -53,6 +53,7 @@ function Simple_Timer(elementForPie, functionFinished, intervalDrowing, PieReset
             ele4Pie.style.background =
             "conic-gradient(" + colorB + spa + "100%," + spa + colorS  + spa + "100%)";
         }
+        ele4Pie.innerHTML = "Finish!"
         timeMil = -1;
         setTimeout(funcFinished, 0);
         return false;
