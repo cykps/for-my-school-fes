@@ -245,3 +245,8 @@ function nextQue() {
         Q.main.drowQueAndCho(timeMilOneQue);
     }
 }
+
+function restart() {
+    console.log("restart")
+    window.location.reload();
+}
