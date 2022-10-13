@@ -32,6 +32,15 @@ function Simple_Timer(elementForPie, functionFinished, intervalDrowing, PieReset
         if (timeNow.getTime() - timeStr.getTime() < timeMil) {
             par = (((timeNow.getTime() - timeStr.getTime()) / timeMil) * 100);
             //console.log(par);
+            let timeS = Math.floor((timeMil - (timeNow.getTime() - timeStr.getTime())) / 1000);
+            let timeMin = Math.floor(timeS / 60);
+            let timeSec = timeS % 60;
+            let timeFormat = "";
+            if (timeMin) {
+                timeFormat += timeMin + "分";
+            }
+            timeFormat += timeSec + "秒";
+            ele4Pie.innerHTML = timeFormat;
             ele4Pie.style.background =
                 "conic-gradient(" + colorB + spa + par + "%," + 
                     spa + colorS  + spa + par + "%)";
