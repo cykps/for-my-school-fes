@@ -17,6 +17,6 @@ main {
     flex-direction: rows;
 }
 
-main * {
+main div {
     width: 33vh;
 }
